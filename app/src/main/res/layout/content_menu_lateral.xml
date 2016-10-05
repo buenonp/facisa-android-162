@@ -12,4 +12,9 @@
     tools:context="com.apprizme.apprizme.MenuLateralActivity"
     tools:showIn="@layout/app_bar_menu_lateral">
 
+    <FrameLayout
+        android:id="@+id/content_menulateral"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"></FrameLayout>
+
 </RelativeLayout>
