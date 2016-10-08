@@ -9,8 +9,143 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.apprizme.apprizme.MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!" />
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/m_logo_lti"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/logo"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/logo"
+            android:layout_centerInParent="true"
+            android:id="@+id/linearLayout2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nome:"
+                    android:id="@+id/nome"
+                    android:layout_centerHorizontal="true"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/campo_nome"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout3"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/linearLayout2">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Email:"
+                    android:id="@+id/email"
+                    android:layout_below="@+id/linearLayout2"
+                    android:layout_centerHorizontal="true"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:id="@+id/campo_email"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout4"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/linearLayout3">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Senha:"
+                    android:id="@+id/senha"
+                    android:layout_below="@+id/linearLayout2"
+                    android:layout_centerHorizontal="true"/>
+
+                <EditText
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="textPassword"
+                    android:ems="10"
+                    android:id="@+id/campo_senha"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout5"
+            android:layout_centerInParent="true"
+            android:layout_below="@id/linearLayout4">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Confirmação de Senha:"
+                android:id="@+id/conf_senha"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/campo_confSenha"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout6"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/linearLayout5">
+
+            <Button
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               android:text="Entrar"
+               android:id="@+id/buttom"
+               android:layout_marginTop="20dp"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/linearLayout7"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/linearLayout6">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Você não tem cadastro? Então clique aqui!"
+                    android:id="@+id/text_new_cadastro"
+                    android:onClick="true"
+                    android:layout_marginTop="25dp"/>
+
+        </LinearLayout>
+
 </RelativeLayout>
