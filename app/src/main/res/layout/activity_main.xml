@@ -9,8 +9,6 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.apprizme.apprizme.MainActivity">
 
-
-
     <ListView
         android:id="@+id/list"
         android:layout_height="wrap_content"
