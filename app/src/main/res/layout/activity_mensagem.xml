@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.apprizme.apprizme.MensagemActivity"
+    android:background="@color/material_deep_teal_200">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="left|top"
+            android:id="@+id/imageButton2"
+            android:contentDescription="@string/returnbutton01"
+            android:src="@android:drawable/ic_menu_revert"
+            android:background="@color/colorPrimary" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="85dp"
+            android:id="@+id/editText2"
+            android:text="Titulo"
+            android:textStyle="bold"
+            android:textIsSelectable="false"
+            android:background="@color/hint_foreground_material_dark"
+            android:autoText="false"
+            android:layout_gravity="center" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textMultiLine"
+            android:ems="10"
+            android:id="@+id/editText3"
+            android:background="@color/hint_foreground_material_dark"
+            android:layout_weight="0.98" />
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="top|right"
+            android:id="@+id/imageButton4"
+            android:contentDescription="@string/returnbutton01"
+            android:src="@android:drawable/ic_menu_send"
+            android:background="@color/colorPrimary" />
+    </LinearLayout>
+
+</LinearLayout>
