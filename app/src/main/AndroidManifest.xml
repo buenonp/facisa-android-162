@@ -14,8 +14,21 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
+        <activity android:name=".MainActivity"></activity>
 
-        <activity android:name=".MainActivity">
+        <activity
+            android:name=".SignUpActivity"
+            android:label="@string/title_activity_login" />
+
+        <activity android:name=".LoginActivity" />
+
+        <activity
+            android:name=".MenuLateralActivity"
+            android:label="@string/title_activity_menu_lateral"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
+
+        <activity android:name=".AprizsActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -23,24 +36,13 @@
             </intent-filter>
         </activity>
 
-        <activity
-            android:name=".MenuLateralActivity"
-            android:label="@string/title_activity_menu_lateral"
-            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".MensagemActivity" />
 
         <activity android:name=".PesquisaGruposActivity" />
 
-        <activity android:name=".CriacaoGrupoActivity"></activity>
+        <activity android:name=".CriacaoGrupoActivity" />
 
         <activity android:name=".ConfigPerfilActivity" />
-
-        <activity android:name=".MensagemActivity"></activity>
-
-        <activity
-            android:name=".SignUpActivity"
-            android:label="@string/title_activity_login" />
-
-        <activity android:name=".LoginActivity"></activity>
 
     </application>
 
