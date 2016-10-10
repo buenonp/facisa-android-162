@@ -29,6 +29,7 @@
     <string name="label_conf_Senha">Conf. Senha:</string>
     <string name="txt_button_enviar">Enviar</string>
     <string name="txt_buttom_entrar">Entrar</string>
+    <string name="title_activity_apprizs_grupo">ApprizsGrupoActivity</string>
 
 
 </resources>

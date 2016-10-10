@@ -8,7 +8,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
-public class AprizsActivity extends AppCompatActivity {
+public class ApprizsActivity extends AppCompatActivity {
 
     ListView listView;
 
@@ -16,7 +16,7 @@ public class AprizsActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
 
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_aprizs);
+        setContentView(R.layout.activity_apprizs);
 
         listView = (ListView) findViewById(R.id.list);
 

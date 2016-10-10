@@ -17,7 +17,6 @@ public class ApprizsGrupoActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_apprizs_grupo);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -27,7 +26,7 @@ public class ApprizsGrupoActivity extends AppCompatActivity {
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Adicionando uma nova notificação ao grupo", Snackbar.LENGTH_LONG)
+                Snackbar.make(view, "Adicionando um novo Appriz", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
             }
         });

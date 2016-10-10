@@ -13,37 +13,31 @@
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-
-        <activity android:name=".MainActivity"></activity>
-
+        <activity android:name=".MainActivity" />
         <activity
             android:name=".SignUpActivity"
-            android:label="@string/title_activity_login" />
-
-        <activity android:name=".LoginActivity" />
-
-        <activity
-            android:name=".MenuLateralActivity"
-            android:label="@string/title_activity_menu_lateral"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>
-
-        <activity android:name=".AprizsActivity">
+            android:label="@string/title_activity_login" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
+        <activity android:name=".LoginActivity" />
+        <activity
+            android:name=".MenuLateralActivity"
+            android:label="@string/title_activity_menu_lateral"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".ApprizsActivity" />
+        <activity
+            android:name=".ApprizsGrupoActivity"
+            android:label="@string/title_activity_apprizs_grupo"
+            android:theme="@style/AppTheme.NoActionBar">
+        </activity>
         <activity android:name=".MensagemActivity" />
-
         <activity android:name=".PesquisaGruposActivity" />
-
         <activity android:name=".CriacaoGrupoActivity" />
-
         <activity android:name=".ConfigPerfilActivity" />
-
     </application>
 
 </manifest>
