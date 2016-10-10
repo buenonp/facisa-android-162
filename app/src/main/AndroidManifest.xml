@@ -28,8 +28,9 @@
         <activity android:name=".ConfigPerfilActivity"></activity>
         <activity android:name=".SignUpActivity" />
         <activity
-            android:name=".LoginActivity"
-            android:label="@string/title_activity_login"></activity>
+            android:name=".SignUpActivity"
+            android:label="@string/title_activity_login" />
+        <activity android:name=".LoginActivity"></activity>
     </application>
 
 </manifest>
