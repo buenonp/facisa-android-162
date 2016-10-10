@@ -30,10 +30,12 @@
             android:label="@string/title_activity_menu_lateral"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity android:name=".PesquisaGruposActivity" />
-        <activity android:name=".ConfigPerfilActivity"></activity>
+        <activity android:name=".ConfigPerfilActivity" />
         <activity android:name=".SignUpActivity" />
         <activity
             android:name=".LoginActivity"
+            android:label="@string/title_activity_login" />
+        <activity android:name=".CriacaoGrupoActivity"></activity>
             android:label="@string/title_activity_login"></activity>
         <activity android:name=".ConfigPerfilActivity" />
         <activity android:name=".MensagemActivity"></activity>
