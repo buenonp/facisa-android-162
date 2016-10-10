@@ -36,7 +36,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/email_login"
-            android:text="Email: "/>
+            android:text="@string/label_email"/>
 
         <EditText
             android:layout_width="match_parent"
@@ -57,7 +57,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/password_login"
-            android:text="Senha:"/>
+            android:text="@string/label_senha"/>
 
         <EditText
             android:layout_width="match_parent"
@@ -73,14 +73,32 @@
         android:layout_height="wrap_content"
         android:id="@+id/linearLayoutlogin4"
         android:layout_centerHorizontal="true"
-        android:layout_below="@id/linearLayoutlogin3">
+        android:layout_below="@id/linearLayoutlogin3"
+        android:layout_marginTop="25dp">
 
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/buttomEnviar_login"
-            android:text="Enviar"
+            android:text="@string/txt_button_enviar"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayoutlogin5"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/linearLayoutlogin4">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Você não tem cadastro? Então clique aqui!"
+            android:id="@+id/text_new_cadastro"
+            android:onClick="true"
             android:layout_marginTop="25dp"/>
+
     </LinearLayout>
 
 
