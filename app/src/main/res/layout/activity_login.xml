@@ -12,6 +12,22 @@
     <LinearLayout
         android:orientation="vertical"
         android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageButton
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="left|top"
+            android:id="@+id/ImgBTreturnToSignUp"
+            android:contentDescription="@string/returnbutton01"
+            android:src="@android:drawable/ic_menu_revert"
+            android:background="@color/colorPrimary" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/linearLayoutlogin1"
         android:layout_alignParentTop="true"
@@ -81,24 +97,6 @@
             android:layout_height="wrap_content"
             android:id="@+id/buttomEnviar_login"
             android:text="@string/txt_button_enviar"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:orientation="horizontal"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/linearLayoutlogin5"
-        android:layout_centerHorizontal="true"
-        android:layout_below="@id/linearLayoutlogin4">
-
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Você não tem cadastro? Então clique aqui!"
-            android:id="@+id/text_new_cadastro"
-            android:onClick="true"
-            android:layout_marginTop="25dp"/>
-
     </LinearLayout>
 
 
