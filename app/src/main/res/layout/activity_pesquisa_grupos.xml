@@ -63,6 +63,4 @@
             android:textColor="@color/background_floating_material_light" />
     </LinearLayout>
 
-
-
 </LinearLayout>
