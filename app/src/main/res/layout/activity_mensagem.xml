@@ -4,8 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="com.apprizme.apprizme.MensagemActivity"
-    android:background="@color/material_deep_teal_200">
+    tools:context="com.apprizme.apprizme.MensagemActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -35,7 +34,7 @@
             android:text="Titulo"
             android:textStyle="bold"
             android:textIsSelectable="false"
-            android:background="@color/hint_foreground_material_dark"
+            android:background="@color/highlighted_text_material_dark"
             android:autoText="false"
             android:layout_gravity="center" />
 
@@ -54,7 +53,7 @@
             android:inputType="textMultiLine"
             android:ems="10"
             android:id="@+id/editText3"
-            android:background="@color/hint_foreground_material_dark"
+            android:background="@color/highlighted_text_material_light"
             android:layout_weight="0.98" />
 
         <ImageButton
