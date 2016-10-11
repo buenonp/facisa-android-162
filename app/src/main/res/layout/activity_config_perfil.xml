@@ -16,7 +16,7 @@
             android:layout_width="50dp"
             android:layout_height="50dp"
             android:layout_gravity="left|top"
-            android:id="@+id/imageButton"
+            android:id="@+id/goToApprizs"
             android:contentDescription="@string/returnbutton01"
             android:src="@android:drawable/ic_menu_revert"
             android:background="@color/colorPrimary" />
