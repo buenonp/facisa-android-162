@@ -19,7 +19,7 @@ public class PesquisaGruposActivity extends AppCompatActivity {
         toApprizeGrupo.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(PesquisaGruposActivity.this,ApprizsGrupoActivity.class);
+                Intent intent = new Intent(PesquisaGruposActivity.this,MensagemActivity.class);
                 startActivity(intent);
             }
         });
