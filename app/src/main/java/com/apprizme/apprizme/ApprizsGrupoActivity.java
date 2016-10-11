@@ -1,6 +1,5 @@
 package com.apprizme.apprizme;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -15,7 +14,6 @@ import android.widget.Toast;
 public class ApprizsGrupoActivity extends AppCompatActivity {
 
     ListView listView;
-    FloatingActionButton toCreatGroup;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,15 +28,6 @@ public class ApprizsGrupoActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Snackbar.make(view, "Adicionando um novo Appriz", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
-            }
-        });
-
-        toCreatGroup = (FloatingActionButton)findViewById(R.id.fab);
-        toCreatGroup.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(ApprizsGrupoActivity.this,CriacaoGrupoActivity.class);
-                startActivity(intent);
             }
         });
 
