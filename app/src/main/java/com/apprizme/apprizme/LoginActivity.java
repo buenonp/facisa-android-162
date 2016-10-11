@@ -30,7 +30,7 @@ public class LoginActivity extends Activity {
         goToApprizs.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(LoginActivity.this, PesquisaGruposActivity.class);
+                Intent intent = new Intent(LoginActivity.this, ApprizsActivity.class);
                 startActivity(intent);
             }
         });
