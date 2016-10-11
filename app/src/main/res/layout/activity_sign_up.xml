@@ -10,9 +10,9 @@
     tools:context="com.apprizme.apprizme.SignUpActivity">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/m_logo_lti"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@drawable/ApprizMe"
         android:layout_gravity="center_horizontal"
         android:id="@+id/logo"
         android:layout_alignParentTop="true"
