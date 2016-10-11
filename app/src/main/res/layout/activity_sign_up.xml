@@ -37,7 +37,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
-            android:id="@+id/campo_nome"/>
+            android:id="@+id/campo_nome"
+            android:singleLine="true"/>
 
     </LinearLayout>
 
@@ -61,7 +62,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
-            android:id="@+id/campo_email"/>
+            android:id="@+id/campo_email"
+            android:singleLine="true"/>
 
     </LinearLayout>
 
@@ -86,7 +88,8 @@
             android:layout_height="wrap_content"
             android:inputType="textPassword"
             android:ems="10"
-            android:id="@+id/campo_senha"/>
+            android:id="@+id/campo_senha"
+            android:singleLine="true"/>
 
     </LinearLayout>
 
@@ -107,7 +110,9 @@
         <EditText
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/campo_confSenha"/>
+            android:inputType="textPassword"
+            android:id="@+id/campo_confSenha"
+            android:singleLine="true"/>
 
     </LinearLayout>
 
@@ -132,14 +137,14 @@
         android:orientation="horizontal"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
+        android:layout_centerHorizontal="true"
         android:layout_alignParentBottom="false"
         android:layout_below="@+id/linearLayout6">
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Você não tem cadastro? Então clique aqui!"
+            android:text="Você já tem cadastro? Então clique aqui!"
             android:id="@+id/text_new_cadastro"
             android:onClick="true"
             android:layout_marginTop="25dp"/>
