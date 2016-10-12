@@ -128,8 +128,8 @@ public class MenuLateralActivity extends AppCompatActivity
             fragmentManager.beginTransaction().replace(R.id.content_menulateral, new PrimeiroFragment()).commit();
         } else if (id == R.id.nav_segundo_layout) {
             fragmentManager.beginTransaction().replace(R.id.content_menulateral, new SegundoFragment()).commit();
-        } else if (id == R.id.nav_terceiro_layout) {
-            fragmentManager.beginTransaction().replace(R.id.content_menulateral, new TerceiroFragment()).commit();
+        } else if (id == R.id.nav_pesquisadegrupo_layout) {
+            fragmentManager.beginTransaction().replace(R.id.content_menulateral, new PesquisaGruposFragment()).commit();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
