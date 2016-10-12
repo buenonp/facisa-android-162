@@ -126,8 +126,8 @@ public class MenuLateralActivity extends AppCompatActivity
 
         if (id == R.id.nav_configperfil_layout) {
             fragmentManager.beginTransaction().replace(R.id.content_menulateral, new ConfigPerfilFragment()).commit();
-        } else if (id == R.id.nav_segundo_layout) {
-            fragmentManager.beginTransaction().replace(R.id.content_menulateral, new SegundoFragment()).commit();
+        } else if (id == R.id.nav_criacaodegrupo_layout) {
+            fragmentManager.beginTransaction().replace(R.id.content_menulateral, new CriacaoGrupoFragment()).commit();
         } else if (id == R.id.nav_pesquisadegrupo_layout) {
             fragmentManager.beginTransaction().replace(R.id.content_menulateral, new PesquisaGruposFragment()).commit();
         }
