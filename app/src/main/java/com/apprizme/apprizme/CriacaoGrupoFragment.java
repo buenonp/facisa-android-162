@@ -7,17 +7,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-/**
- * Created by volne on 04/10/2016.
- */
-public class SegundoFragment extends Fragment {
+public class CriacaoGrupoFragment extends Fragment {
 
     View tela;
 
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        tela = inflater.inflate(R.layout.segundo_layout, container, false);
+        tela = inflater.inflate(R.layout.activity_criacao_grupo, container, false);
         return tela;
     }
 }
