@@ -17,7 +17,7 @@ public class PrimeiroFragment extends Fragment {
     @Nullable
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
-        tela = inflater.inflate(R.layout.primeiro_layout, container, false);
+        tela = inflater.inflate(R.layout.activity_pesquisa_grupos, container, false);
         return tela;
     }
 }
