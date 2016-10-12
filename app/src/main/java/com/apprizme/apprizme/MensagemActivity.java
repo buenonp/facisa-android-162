@@ -20,7 +20,7 @@ public class MensagemActivity extends AppCompatActivity {
         returnToApprizGroup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(MensagemActivity.this,ApprizsGrupoActivity.class);
+                Intent intent = new Intent(MensagemActivity.this,MenuLateralActivity.class);
                 startActivity(intent);
             }
         });

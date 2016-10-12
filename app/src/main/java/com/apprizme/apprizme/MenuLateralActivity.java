@@ -1,5 +1,6 @@
 package com.apprizme.apprizme;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -34,8 +35,8 @@ public class MenuLateralActivity extends AppCompatActivity
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                Intent intent = new Intent(MenuLateralActivity.this,MensagemActivity.class);
+                startActivity(intent);
             }
         });
 
@@ -99,6 +100,10 @@ public class MenuLateralActivity extends AppCompatActivity
         } else if (id == R.id.nav_pesquisadegrupo_layout) {
             fragmentManager.beginTransaction().replace(R.id.content_menulateral, new PesquisaGruposFragment()).commit();
         } else if (id == R.id.nav_todosapprizs_layout) {
+            fragmentManager.beginTransaction().replace(R.id.content_menulateral, new ApprizsFragment()).commit();
+        } else if (id == R.id.nav_apprizssi_layout) {
+            fragmentManager.beginTransaction().replace(R.id.content_menulateral, new ApprizsFragment()).commit();
+        } else if (id == R.id.nav_apprizsandroid_layout) {
             fragmentManager.beginTransaction().replace(R.id.content_menulateral, new ApprizsFragment()).commit();
         }
 
