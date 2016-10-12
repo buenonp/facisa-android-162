@@ -3,7 +3,9 @@ package com.apprizme.apprizme;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -20,8 +22,6 @@ import android.widget.Toast;
 
 public class MenuLateralActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener {
-
-    ListView listView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,41 +48,9 @@ public class MenuLateralActivity extends AppCompatActivity
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
 
-        listView = (ListView) findViewById(R.id.list);
+        android.app.FragmentManager fragmentManager = getFragmentManager();
+        fragmentManager.beginTransaction().replace(R.id.content_menulateral, new ApprizsFragment()).commit();
 
-        String[] values = new String[] {
-                "Não haverá aula hoje pela manhã",
-                "Alunos com multas atrasadas na biblioteca façam o favor de pagar",
-                "Notas de Desenvolvimento mobile no ar",
-                "Meu telemóvel está a carregar",
-                "Comida liberada na cantina na conta do Professor Daniel Abella",
-                "Não haverá aula na sexta-feira anterior ao fds das eleições",
-                "Não haverá aula na segunda-feira posterior ao fds das eleições",
-                "Disciplina de Android vai dar 10 pra todo mundo",
-                "Segunda, Terça e Quarta da próxima semana é feriadão",
-                "Entreguem os projetos de Android",
-                "Entrega do projeto de Android foi adiada",
-                "Facisa é primeira colocada na olimpíada de programação",
-                "Sistemas de Informação da Facisa é segundo melhor do país",
-                "Empresa canadense busca por profissionais qualificados"
-        };
-
-        ArrayAdapter<String> adapter = new ArrayAdapter<String>(this,
-                android.R.layout.simple_list_item_1, android.R.id.text1, values);
-
-        listView.setAdapter(adapter);
-
-        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
-
-                String itemValue = (String) listView.getItemAtPosition(position);
-                Toast.makeText(getApplicationContext(), itemValue, Toast.LENGTH_LONG).show();
-
-            }
-
-        });
     }
 
     @Override
@@ -130,6 +98,8 @@ public class MenuLateralActivity extends AppCompatActivity
             fragmentManager.beginTransaction().replace(R.id.content_menulateral, new CriacaoGrupoFragment()).commit();
         } else if (id == R.id.nav_pesquisadegrupo_layout) {
             fragmentManager.beginTransaction().replace(R.id.content_menulateral, new PesquisaGruposFragment()).commit();
+        } else if (id == R.id.nav_todosapprizs_layout) {
+            fragmentManager.beginTransaction().replace(R.id.content_menulateral, new ApprizsFragment()).commit();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
