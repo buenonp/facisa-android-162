@@ -37,7 +37,7 @@
         <activity android:name=".MensagemActivity" />
         <activity android:name=".PesquisaGruposFragment" />
         <activity android:name=".CriacaoGrupoActivity" />
-        <activity android:name=".ConfigPerfilActivity" />
+        <activity android:name=".ConfigPerfilFragment" />
     </application>
 
 </manifest>

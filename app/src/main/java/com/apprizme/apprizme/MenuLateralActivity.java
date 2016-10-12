@@ -124,8 +124,8 @@ public class MenuLateralActivity extends AppCompatActivity
         int id = item.getItemId();
         android.app.FragmentManager fragmentManager = getFragmentManager();
 
-        if (id == R.id.nav_primeiro_layout) {
-            fragmentManager.beginTransaction().replace(R.id.content_menulateral, new PrimeiroFragment()).commit();
+        if (id == R.id.nav_configperfil_layout) {
+            fragmentManager.beginTransaction().replace(R.id.content_menulateral, new ConfigPerfilFragment()).commit();
         } else if (id == R.id.nav_segundo_layout) {
             fragmentManager.beginTransaction().replace(R.id.content_menulateral, new SegundoFragment()).commit();
         } else if (id == R.id.nav_pesquisadegrupo_layout) {
