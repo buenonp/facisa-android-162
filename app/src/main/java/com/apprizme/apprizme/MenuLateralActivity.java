@@ -3,7 +3,9 @@ package com.apprizme.apprizme;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
+import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.view.View;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
@@ -45,6 +47,9 @@ public class MenuLateralActivity extends AppCompatActivity
 
         NavigationView navigationView = (NavigationView) findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(this);
+
+        android.app.FragmentManager fragmentManager = getFragmentManager();
+        fragmentManager.beginTransaction().replace(R.id.content_menulateral, new ApprizsFragment()).commit();
 
     }
 
@@ -93,6 +98,8 @@ public class MenuLateralActivity extends AppCompatActivity
             fragmentManager.beginTransaction().replace(R.id.content_menulateral, new CriacaoGrupoFragment()).commit();
         } else if (id == R.id.nav_pesquisadegrupo_layout) {
             fragmentManager.beginTransaction().replace(R.id.content_menulateral, new PesquisaGruposFragment()).commit();
+        } else if (id == R.id.nav_todosapprizs_layout) {
+            fragmentManager.beginTransaction().replace(R.id.content_menulateral, new ApprizsFragment()).commit();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
