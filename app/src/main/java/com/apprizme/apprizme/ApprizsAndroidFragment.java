@@ -11,7 +11,7 @@ import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.Toast;
 
-public class ApprizsFragment extends Fragment {
+public class ApprizsAndroidFragment extends Fragment {
 
     View tela;
     ListView listView;
@@ -20,25 +20,17 @@ public class ApprizsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        tela = inflater.inflate(R.layout.fragment_apprizs, container, false);
+        tela = inflater.inflate(R.layout.fragment_apprizs_android, container, false);
 
         listView = (ListView) tela.findViewById(R.id.list);
 
         String[] values = new String[] {
-                "Não haverá aula hoje pela manhã",
-                "Alunos com multas atrasadas na biblioteca façam o favor de pagar",
                 "Notas de Desenvolvimento mobile no ar",
                 "Meu telemóvel está a carregar",
                 "Comida liberada na cantina na conta do Professor Daniel Abella",
-                "Não haverá aula na sexta-feira anterior ao fds das eleições",
-                "Não haverá aula na segunda-feira posterior ao fds das eleições",
                 "Disciplina de Android vai dar 10 pra todo mundo",
-                "Segunda, Terça e Quarta da próxima semana é feriadão",
                 "Entreguem os projetos de Android",
-                "Entrega do projeto de Android foi adiada",
-                "Facisa é primeira colocada na olimpíada de programação",
-                "Sistemas de Informação da Facisa é segundo melhor do país",
-                "Empresa canadense busca por profissionais qualificados"
+                "Entrega do projeto de Android foi adiada"
         };
 
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(getActivity().getBaseContext(),
@@ -59,6 +51,7 @@ public class ApprizsFragment extends Fragment {
         });
 
         return tela;
+
     }
 
 }

@@ -64,12 +64,12 @@ public class MenuLateralActivity extends AppCompatActivity
         }
     }
 
-    @Override
+    /*@Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
         getMenuInflater().inflate(R.menu.menu_lateral, menu);
         return true;
-    }
+    }*/
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
@@ -102,9 +102,9 @@ public class MenuLateralActivity extends AppCompatActivity
         } else if (id == R.id.nav_todosapprizs_layout) {
             fragmentManager.beginTransaction().replace(R.id.content_menulateral, new ApprizsFragment()).commit();
         } else if (id == R.id.nav_apprizssi_layout) {
-            fragmentManager.beginTransaction().replace(R.id.content_menulateral, new ApprizsFragment()).commit();
+            fragmentManager.beginTransaction().replace(R.id.content_menulateral, new ApprizsSiFragment()).commit();
         } else if (id == R.id.nav_apprizsandroid_layout) {
-            fragmentManager.beginTransaction().replace(R.id.content_menulateral, new ApprizsFragment()).commit();
+            fragmentManager.beginTransaction().replace(R.id.content_menulateral, new ApprizsAndroidFragment()).commit();
         }
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
